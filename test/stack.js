@@ -44,7 +44,7 @@ Stack.prototype.count = function() {
 var assert = require('assert');
 var should = require('should');
 var myStack = new Stack(3);
-describe('#myStack.push()', function() {
+xdescribe('#myStack.push()', function() {
   it('should return count', function() {
     myStack.push('a').should.equal(1);
   	myStack.push('b').should.equal(2);
@@ -52,7 +52,7 @@ describe('#myStack.push()', function() {
   	myStack.push('d').should.equal('Max capacity reached');
   });
 });
-describe('#myStack.pop()', function() {
+xdescribe('#myStack.pop()', function() {
   it('should return last value', function() {
     assert.equal(myStack.pop(), 'c');
   });
@@ -60,7 +60,7 @@ describe('#myStack.pop()', function() {
     assert.equal(myStack.count(), 2);
   });
 });
-describe('#myStack.peek()', function() {
+xdescribe('#myStack.peek()', function() {
   it('should return last value', function() {
     assert.equal(myStack.peek(), 'b');
   });
